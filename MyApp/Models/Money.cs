@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace Portal.Domain.Values
+namespace MyApp.Models
 {
     public class Money
     {
