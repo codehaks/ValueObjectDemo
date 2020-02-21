@@ -13,6 +13,7 @@ namespace MyApp.Data
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.ApplyConfiguration(new ProductConfig());
             base.OnModelCreating(builder);
         }
     }
