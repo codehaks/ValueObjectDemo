@@ -19,12 +19,14 @@ namespace MyApp.Filters
             if (!context.ModelState.IsValid)
             {
                 var ctrl = (Controller)context.Controller;
-
+                
                 var view = new ViewResult
                 {
                     ViewName = context.RouteData.Values["Action"].ToString(),
                     ViewData = ctrl.ViewData
                 };
+
+                ctrl.ViewData["book"] = "books";
 
                 context.Result = view;
             }
