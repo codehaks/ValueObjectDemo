@@ -12,6 +12,7 @@ namespace MyApp.Data
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
+            builder.Property(p => p.Name).HasMaxLength(5);
             builder.OwnsOne(p => p.Price);
         }
     }

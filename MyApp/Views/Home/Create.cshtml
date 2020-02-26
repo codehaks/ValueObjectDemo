@@ -1,0 +1,13 @@
+﻿@model MyApp.Models.Product
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<form method="post" asp-antiforgery="true">
+    <input type="text" asp-for="Name" />
+
+    <button>Submit</button>
+</form>
+
